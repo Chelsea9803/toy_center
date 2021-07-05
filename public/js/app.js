@@ -1,0 +1,1 @@
+const tittle = document.getElementById("tittle")
