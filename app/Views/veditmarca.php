@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Title</title>
-    <link rel="stylesheet" href="<?php echo base_url() ?>/css/bootstrap.css">
+     <link rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css') ?>">
 </head>
 <body>
     <div class="container mt-5">
-        <h1>EDITAR MARCA</h1>
+
+       <h1>lista de marcas</h1>
+       <a href="<?php echo base_url('/marcas/create/') ?>" class="btn btn-primary" >Nueva marca</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">activo</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <?php foreach ($lista as $list): //recorre el listado de la respuesta y lo muestra ?>
+								  <tr>
+								      <td scope="col"><?php echo $list['ma_id'] ?></th>
+								      <td scope="col"><?php echo $list['ma_nombre'] ?></th>
+								      <td scope="col"><?php echo $list['ma_active'] ?></th>
+
+								      <td scope="col">
+								      <a href="<?php echo base_url('/marcas/edit/' . $list['ma_id']) ?>" class="btn btn-info" >Editar</a>
+								      <a href="<?php echo base_url('/marcas/delete/' . $list['ma_id']) ?>" class="btn btn-warning" >Borrar</a>
+								      </td>
+								    </tr>
+								    <?php endforeach;?>
+  </tbody>
+</table>
 
 
-        <br>
-        <div class="row">
-            <div class="col-lg-6">
-            <form action="<?php echo site_url('/marcas/update') ?>" method="post">
-            <div class="form-group">
-            <label >Nombre</label><br>
-            <input type="text" id="nombre" value="<?php echo $marca['ma_nombre']; ?>" name="nombre" class="form-control"><br>
-            <label >Activo</label><br>
-            <select id="activo" value="<?php echo $marca['ma_active']; ?>" name="activo" class="form-control">
-            <option value="<?php echo $marca['ma_active']; ?>"><?php echo $marca['ma_active']; ?></option>
-            <option value="SI">SI</option>
-            <option value="NO">NO</option>
-            </select>
-            <br>
-            <input type="hidden" id="idmarca" name="idmarca" value="<?php echo $marca['ma_id']; ?>" >
-            <input type="submit" value="editar" class="btn btn-danger">
-            </form>
-            </div>
-
-            </div>
-            <div class="col-lg-6">
-
-            </div>
-        </div>
-
-    </div>
-
-
-
-<script src="<?php echo base_url() ?>/js/bootstrap.js"></script>
+</div>
+   <script src="<?php echo base_url('/js/bootstrap.min.js') ?>"></script>
 </body>
 </html>

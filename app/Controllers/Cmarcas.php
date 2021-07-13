@@ -24,7 +24,7 @@ class Cmarcas extends Controller
         //consultamos los datos
         // $datos['lista']=$editardato->where('id',$id)->first();
         $datos['marca'] = $editardato->where('ma_id', $id)->first();
-        print_r($datos);
+        //print_r($datos);
 
         return view('veditmarca', $datos);
 

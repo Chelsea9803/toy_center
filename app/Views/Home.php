@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
         }
     </style>
 
-    <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.min.css')?>">
-    <link rel="stylesheet" href="<?php echo base_url('css/main.css')?>">
+    <link rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('/css/main.css') ?>">
 
 </head>

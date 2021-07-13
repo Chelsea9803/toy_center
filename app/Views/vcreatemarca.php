@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Title</title>
-    <link rel="stylesheet" href="<?php echo base_url() ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css') ?>">
 </head>
 <body>
     <div class="container mt-5">
@@ -35,6 +35,6 @@
 
 
 
-<script src="<?php echo base_url() ?>/js/bootstrap.js"></script>
+<script src="<?php echo base_url('/js/bootstrap.min.js') ?>"></script>
 </body>
 </html>
