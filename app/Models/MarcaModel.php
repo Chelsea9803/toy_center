@@ -3,7 +3,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Mmarca extends Model
+class MarcaModel extends Model
 {
 
     protected $table         = 'toys_bd.marcas';

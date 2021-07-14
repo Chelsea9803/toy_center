@@ -1,16 +1,14 @@
-<?php
+<?php 
 namespace App\Controllers;
 
-use App\Models\Mmarca;
 use CodeIgniter\Controller;
+use App\Models\MarcaModel;
 
-class Cmarcas extends Controller
-{
-
+class MarcasController extends Controller{
     public function index()
     {
 
-        $listarMarcas = new Mmarca(); // se crea el objeto de la clase Mmarca
+        $listarMarcas = new MarcaModel(); // se crea el objeto de la clase MarcaModel
 
         $resultadodatos['lista'] = $listarMarcas->findAll(); // se crea un arreglo para aplicar el metodo findall
 
@@ -20,7 +18,7 @@ class Cmarcas extends Controller
     public function edit($id)
     {
 
-        $editardato = new Mmarca(); // se crea el objeto de la clase Mmarca
+        $editardato = new MarcaModel(); // se crea el objeto de la clase MarcaModel
         //consultamos los datos
         // $datos['lista']=$editardato->where('id',$id)->first();
         $datos['marca'] = $editardato->where('ma_id', $id)->first();
@@ -32,7 +30,7 @@ class Cmarcas extends Controller
 
     public function update()
     {
-        $updatemarca = new Mmarca(); // se crea el objeto de la clase Mmarca
+        $updatemarca = new MarcaModel(); // se crea el objeto de la clase MarcaModel
 
         $datos = [
 
@@ -54,7 +52,7 @@ class Cmarcas extends Controller
 
     public function save()
     {
-        $nuevocontacto = new Mmarca(); // se crea el objeto de la clase Mmarca
+        $nuevocontacto = new MarcaModel(); // se crea el objeto de la clase MarcaModel
 
         $datos = [
             'ma_nombre' => $this->request->getVar('nombre'),
@@ -71,7 +69,7 @@ class Cmarcas extends Controller
     public function delete($id)
     {
 
-        $borrarcontacto = new Mmarca(); // se crea el objeto de la clase Mmarca
+        $borrarcontacto = new MarcaModel(); // se crea el objeto de la clase MarcaModel
         $borrarcontacto->where('ma_id', $id)->delete($id);
         return $this->response->redirect(base_url('/marcas'));
 

@@ -33,16 +33,21 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/acerca', 'Home::acerca');
-$routes->get('/registro', 'Home::registro');
+
 
 
 //rutas de crud
-$routes->get('/marcas', 'Cmarcas::index');
-$routes->get('/marcas/create', 'Cmarcas::create');
-$routes->post('/marcas/save', 'Cmarcas::save');
-$routes->get('/marcas/delete/(:num)', 'Cmarcas::delete/$1');
-$routes->get('/marcas/edit/(:num)', 'Cmarcas::edit/$1');
-$routes->post('/marcas/update', 'Cmarcas::update');
+$routes->get('/marcas', 'MarcasController::index');
+$routes->get('/marcas/create', 'MarcasController::create');
+$routes->post('/marcas/save', 'MarcasController::save');
+$routes->get('/marcas/delete/(:num)', 'MarcasController::delete/$1');
+$routes->get('/marcas/edit/(:num)', 'MarcasController::edit/$1');
+$routes->post('/marcas/update', 'CmaMarcasControllerrcas::update');
+
+
+
+$routes->get('/register', 'AuthController::register');
+
 
 /*
  * --------------------------------------------------------------------

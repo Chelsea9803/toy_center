@@ -26,9 +26,5 @@ class Home extends BaseController
         return view('Home') . view('vcabecera') . view('vacerca');
 
     }
-    public function registro()
-    {
-        return view('Home') . view('vcabecera') . view('vregistro');
-
-    }
+   
 }
