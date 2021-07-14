@@ -15,7 +15,8 @@ class Home extends BaseController
         $vistas = view('Home') .
         view('vcabecera') .
         view('vbody', $result) .
-        view('vpie');
+        view('vpie').
+        view('vregistro');
         return $vistas;
 
     }
@@ -23,6 +24,11 @@ class Home extends BaseController
     public function acerca()
     {
         return view('Home') . view('vcabecera') . view('vacerca');
+
+    }
+    public function registro()
+    {
+        return view('Home') . view('vcabecera') . view('vregistro');
 
     }
 }

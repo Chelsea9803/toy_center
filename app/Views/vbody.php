@@ -3,13 +3,13 @@
 <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/Imagen2.jpg" class="d-block w-100" alt="" height="750">
+      <img src="img/Portada1.png" class="d-block w-100" alt="" height="750">
     </div>
     <div class="carousel-item">
-      <img src="img/Imagen4.jpg" class="d-block w-100" alt="" height="750">
+      <img src="img/Portada2.png" class="d-block w-100" alt="" height="750">
     </div>
     <div class="carousel-item">
-      <img src="img/Imagen7.jpg" class="d-block w-100" alt="" height="750">
+      <img src="img/Portada3.png" class="d-block w-100" alt="" height="750">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">

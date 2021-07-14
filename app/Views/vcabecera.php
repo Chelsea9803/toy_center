@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/Logo.png" alt="" height="80" width="200">
+                <img src="img/Logo.png" alt="" height="100" width="300">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
