@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-use App\Models\Mtoys;
+use App\Models\ToysModel;
 
 class Home extends BaseController
 {
     public function index()
     {
-        $toysList = new Mtoys(); // se crea el objeto de la clase mcontacts
+        $toysList = new ToysModel(); // se crea el objeto de la clase mcontacts
 
         $result['lista'] = $toysList->getEntradas();
 
