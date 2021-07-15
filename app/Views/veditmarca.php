@@ -9,7 +9,7 @@
 <body>
     <div class="container mt-5">
 
-       <h1>lista de marcas</h1>
+       <h1>Lista de Marcas</h1>
        <a href="<?php echo base_url('/marcas/create/') ?>" class="btn btn-primary" >Nueva marca</a>
 
 <table class="table">
@@ -17,7 +17,7 @@
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Nombre</th>
-      <th scope="col">activo</th>
+      <th scope="col">Activo</th>
       <th scope="col">Acciones</th>
     </tr>
   </thead>

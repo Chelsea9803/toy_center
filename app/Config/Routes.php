@@ -48,6 +48,7 @@ $routes->post('/marcas/update', 'CmaMarcasControllerrcas::update');
 
 $routes->get('/register', 'AuthController::register');
 $routes->get('/promo', 'PromocionesController::promo');
+$routes->get('/login', 'LoginController::login');
 
 
 /*
