@@ -3,21 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Promociones</title>
-            <link rel="stylesheet" href="main.css">
+        <title>Promociones</title>
+        <link rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css') ?>">
     </head>
-    <body>
+    <body> 
     <!-- Carousel -->
         <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/Promo1.png" class="d-block w-100" alt="" height="750">
+                    <img src="img/Promo1.png" class="d-block w-100" alt="" height="400">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/Promo2.png" class="d-block w-100" alt="" height="750">
+                    <img src="img/Promo2.png" class="d-block w-100" alt="" height="400">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/Promo3.png" class="d-block w-100" alt="" height="750">
+                    <img src="img/Promo3.png" class="d-block w-100" alt="" height="400">
                 </div>
             </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
@@ -37,5 +37,8 @@
                 <h3 class="text-center pb-5 pt-5 h1"><br> Promociones </h3>
                 
             </div>
+
+        <script src="<?php echo base_url('/js/bootstrap.min.js') ?>"></script>
+
     </body>
-</html>
+</html> 

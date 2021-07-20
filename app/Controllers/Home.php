@@ -15,8 +15,8 @@ class Home extends BaseController
         $vistas = view('Home') .
         view('vcabecera') .
         view('vbody', $result) .
-        view('vpie').
-        view('vregistro');
+        view('vpie');
+        
         return $vistas;
 
     }
