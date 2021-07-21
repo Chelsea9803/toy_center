@@ -71,7 +71,7 @@
 <?php
 
         $name    = $list['prd_nombre'];
-        $empresa = $list['pro_nombre'];
+        $empresa = $list['ma_id'];
         $price   = number_format($list['prd_price'], 0);
         $id      = $list['prd_id'];
         $image   = $list['url_prod'];
@@ -81,15 +81,15 @@
 																          <div class="card w-100 card-border mb-5">
 																                  <img src="img/' . $image . '" class="card-img-top" alt="...">
 																                  <div class="card-body">
-																                      <h5 class="card-title" id="tittle">' . $name . ' (' . $marca . ')</h5>
-																                      <p class="card-text" id="empresa">Nombre empresa: ' . $empresa . '</p>
+																                      <h5 class="card-title" id="tittle">' . $name . ' </h5> 
+																                      <p class="card-text" id="empresa">Nombre empresa: ' . $marca . '</p>
 																                      <p class="card-text" id="precio">Precio: $ ' . $price . '</p>
 																                      <p class="card-text" id="codigo">Identificador: ' . $id . '</p>
 																                  </div>
 																              </div>
 																          </div>';?>
 
-
+<!--(' . $marca . ')-->
 																	          <?php endforeach;?>
 
               </div>
