@@ -64,4 +64,39 @@
     background-size: 75%;
     margin-top: -20px;
 }
+:root {
+    --light: #ffffff;
+    --light-x: #ffffff; 
+    --light: #ffffff;
+}
+
+.text-dark { color: var(--dark) !important; }
+.bg-light { background-color: var(--light) !important; }
+.bg-light-x { background-color: var(--light-x); }
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.form-control:focus {
+    background-color: var(--light-x);
+    outline: none;
+}
+
+.PortadaLogin1 {
+    background-image: url(../img/PortadaLogin1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.PortadaLogin2 {
+    background-image: url(../img/PortadaLogin2.png);
+    background-size: cover;
+    background-position: center;
+}
 
