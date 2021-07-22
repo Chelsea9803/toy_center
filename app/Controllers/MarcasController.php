@@ -43,7 +43,8 @@ class MarcasController extends Controller{
 
         $response['lista'] = json_decode(json_encode($response), true);
 
-        return view('vmarcas', $response);
+        return view('Home'). view('vcabecera'). view('vmarcas', $response). view('vpie');
+          
     }
 
     public function edit($id)
