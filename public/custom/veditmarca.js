@@ -22,6 +22,10 @@ function update(){
         success: function(response)
         {
            console.log(response);
+
+           alert('Datos Actualizados..!!');
+
+           window.location.href = "http://localhost/toy_center/public/marcas";
        }
    });
 }

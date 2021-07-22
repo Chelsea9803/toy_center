@@ -14,12 +14,12 @@
       
         <div class="row">
             <div class="col-lg-6">
-            <form action="<?php echo site_url('/marcas/save') ?>" method="post">
+            <form id="frmMarca" role="form">
             <div class="form-group">
             <label >Nombre</label><br>
-            <input type="text" id="nombre" autofocus='ON' name="nombre" class="form-control"><br>
+            <input type="text"  id="ma_nombre" autofocus='ON' name="ma_nombre"  class="form-control"><br>
            <label >Activo</label><br>
-            <select id="activo" name="activo" class="form-control">
+            <select id="ma_active" name="ma_active"  class="form-control">
             <option value="SI">SI</option>
             <option value="NO">NO</option>
             </select><br>

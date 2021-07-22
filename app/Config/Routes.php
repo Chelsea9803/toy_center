@@ -39,10 +39,7 @@ $routes->get('/acerca', 'Home::acerca');
 //rutas de crud
 $routes->get('/marcas', 'MarcasController::index');
 $routes->get('/marcas/create', 'MarcasController::create');
-$routes->post('/marcas/save', 'MarcasController::save');
-$routes->get('/marcas/delete/(:num)', 'MarcasController::delete/$1');
 $routes->get('/marcas/edit/(:num)', 'MarcasController::edit/$1');
-$routes->post('/marcas/update', 'CmaMarcasControllerrcas::update');
 
 
 

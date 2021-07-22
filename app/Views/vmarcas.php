@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Title</title>
      <link rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css') ?>">
+     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="container mt-5">
@@ -31,7 +33,7 @@
 
 								      <td scope="col">
 								      <a href="<?php echo base_url('/marcas/edit/' . $list['ma_id']) ?>" class="btn btn-info" >Editar</a>
-								      <a href="<?php echo base_url('/marcas/delete/' . $list['ma_id']) ?>" class="btn btn-warning" >Borrar</a>
+								      <a onclick=deleteMa(<?php echo $list['ma_id'] ?>); href="#"  class="btn btn-warning" >Borrar</a>
 								      </td>
 								    </tr>
 								    <?php endforeach;?>
@@ -41,5 +43,6 @@
 
 </div>
    <script src="<?php echo base_url('/js/bootstrap.min.js') ?>"></script>
+   <script src="<?php echo base_url('custom/vmarcas.js'); ?>"></script>
 </body>
 </html>

@@ -33,6 +33,7 @@ class MarcasController extends Controller{
         return $items;
 
     }
+    
     public function index()
     {
 
@@ -62,52 +63,14 @@ class MarcasController extends Controller{
         return view('veditmarca', $datos);
 
     }
-
-    public function update()
-    {
-        $updatemarca = new MarcaModel(); // se crea el objeto de la clase MarcaModel
-
-        $datos = [
-
-            'ma_nombre' => $this->request->getVar('nombre'),
-            'ma_active' => $this->request->getVar('activo')
-
-        ];
-        $id = $this->request->getVar('idmarca');
-        $updatemarca->update($id, $datos);
-        echo "actualizado a la base de datos";
-        return $this->response->redirect(base_url('/marcas'));
-    }
+    
 
     public function create()
     {
 
         return view('vcreatemarca');
-    }
+    }  
 
-    public function save()
-    {
-        $nuevocontacto = new MarcaModel(); // se crea el objeto de la clase MarcaModel
-
-        $datos = [
-            'ma_nombre' => $this->request->getVar('nombre'),
-            'ma_active' => $this->request->getVar('activo')
-
-        ];
-
-        $nuevocontacto->insert($datos);
-        echo "ingresado a la base de datos";
-        return $this->response->redirect(base_url('/marcas'));
-
-    }
-
-    public function delete($id)
-    {
-
-        $borrarcontacto = new MarcaModel(); // se crea el objeto de la clase MarcaModel
-        $borrarcontacto->where('ma_id', $id)->delete($id);
-        return $this->response->redirect(base_url('/marcas'));
-
-    }
+   
 
 }
