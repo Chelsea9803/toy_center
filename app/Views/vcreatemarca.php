@@ -10,6 +10,7 @@
     <div class="container mt-5">
         <h1>NUEVA MARCA</h1>
         <br>
+      
         <div class="row">
             <div class="col-lg-6">
             <form action="<?php echo site_url('/marcas/save') ?>" method="post">

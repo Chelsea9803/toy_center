@@ -5,24 +5,59 @@ use CodeIgniter\Controller;
 use App\Models\MarcaModel;
 
 class MarcasController extends Controller{
+    public static function getresponse($url)
+    {
+        #set HTTP header
+        $headers = array('Content-Type: application/json');
+
+        #Open connection
+        $ch = curl_init();
+
+        #Set the url, number of GET vars, GET data
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, false);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+        #Execute request
+        $result = curl_exec($ch);
+
+        #Close connection
+        curl_close($ch);
+
+        #get the result and parse to JSON
+        $items = json_decode($result);
+
+        return $items;
+
+    }
     public function index()
     {
 
-        $listarMarcas = new MarcaModel(); // se crea el objeto de la clase MarcaModel
+        $items = self::getresponse('http://localhost/api-toycenter/public/marcas');
 
-        $resultadodatos['lista'] = $listarMarcas->findAll(); // se crea un arreglo para aplicar el metodo findall
+        $response = $items->Marcas;
 
-        return view('vmarcas', $resultadodatos);
+        $response['lista'] = json_decode(json_encode($response), true);
+
+        return view('vmarcas', $response);
     }
 
     public function edit($id)
     {
 
-        $editardato = new MarcaModel(); // se crea el objeto de la clase MarcaModel
-        //consultamos los datos
-        // $datos['lista']=$editardato->where('id',$id)->first();
-        $datos['marca'] = $editardato->where('ma_id', $id)->first();
-        //print_r($datos);
+        $url = "http://localhost/api-toycenter/public/marcas/" . $id;
+
+        $lista = self::getresponse($url);
+
+        $reslista = $lista->Marca;
+
+        $datos['lista'] = json_decode(json_encode($reslista), true);      
+       // print_r($datos);
+
+   
 
         return view('veditmarca', $datos);
 
