@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('/css/main.css') ?>">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">
-     
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body class="bg-light">
 <section>
@@ -43,14 +43,14 @@
                 <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
                 <h1 class="font-weight-bold mb-4">Bienvenido</h1> 
                  
-                <form class="mb-5">
+                <form id="frmLogin" class="mb-5">
                     <div class="mb-4">
                       <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
-                      <input type="email" class="form-control bg-light-x border-0" id="exampleInputEmail1" placeholder="Ingresa tu email" aria-describedby="emailHelp">
+                      <input type="email" id="user_email" name="user_email" value="macheste9803@gmail.com" required class="form-control bg-light-x border-0" id="exampleInputEmail1" placeholder="Ingresa tu email" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-4">
                       <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
-                      <input type="password" class="form-control bg-light-x border-0 mb-2" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
+                      <input id="user_pass" name="user_pass" value="Colombia2021" type="password" required class="form-control bg-light-x border-0 mb-2" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
                       <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
@@ -92,5 +92,6 @@
     <script src="<?php echo base_url('/js/bootstrap.min.js') ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-</body>
+    <script src="<?php echo base_url('js/custom/login.js'); ?>"></script>
+  </body>
 </html>
