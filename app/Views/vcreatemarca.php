@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
+    <title>Crear Marca</title>
     <link rel="stylesheet" href="<?php echo base_url('/css/bootstrap.min.css') ?>">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container mt-5">
         <h1>NUEVA MARCA</h1>
         <br>
+      
         <div class="row">
             <div class="col-lg-6">
             <form action="<?php echo site_url('/marcas/save') ?>" method="post">
@@ -36,5 +38,6 @@
 
 
 <script src="<?php echo base_url('/js/bootstrap.min.js') ?>"></script>
+<script src="<?php echo base_url('custom/vcreatemarca.js'); ?>"></script>
 </body>
 </html>

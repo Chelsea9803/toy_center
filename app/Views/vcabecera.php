@@ -15,7 +15,6 @@
                     <li class="nav-item"><a class="nav-link" href="./home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./acerca">Acerca de</a></li>
                     <li class="nav-item"><a class="nav-link" href="./promo">Promociones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./register">Registro</a></li>
                     <li class="nav-item"><a class="nav-link" href="./login">Iniciar Sesión</a></li>
                 </ul>
                 <form class="d-flex">
