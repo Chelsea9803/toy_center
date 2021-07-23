@@ -22,7 +22,7 @@ function save(){
         {
            console.log(response);
 
-           alert('Datos Guardados..!!');
+           alert('Marca guardada con éxito');
 
            window.location.href = "http://localhost/toy_center/public/marcas";
        }

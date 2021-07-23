@@ -23,7 +23,7 @@ function update(){
         {
            console.log(response);
 
-           alert('Datos Actualizados..!!');
+           alert('Marca actualizada con éxito');
 
            window.location.href = "http://localhost/toy_center/public/marcas";
        }

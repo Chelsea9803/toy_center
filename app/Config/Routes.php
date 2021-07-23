@@ -37,13 +37,15 @@ $routes->get('/acerca', 'Home::acerca');
 
 
 //rutas de crud
+//Marcas
 $routes->get('/marcas', 'MarcasController::index');
 $routes->get('/marcas/create', 'MarcasController::create');
 $routes->get('/marcas/edit/(:num)', 'MarcasController::edit/$1');
 
 
 
-$routes->get('/register', 'AuthController::register');
+//Páginas
+$routes->get('/register', 'RegistroController::register');
 $routes->get('/promo', 'PromocionesController::promo');
 $routes->get('/login', 'LoginController::login');
 

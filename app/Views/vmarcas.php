@@ -33,8 +33,8 @@
 								      <td scope="col"><?php echo $list['ma_active'] ?></th>
 
 								      <td scope="col">
-								      <a href="<?php echo base_url('/marcas/edit/' . $list['ma_id']) ?>" class="btn btn-info" >Editar</a>
-								      <a onclick=deleteMa(<?php echo $list['ma_id'] ?>); href="#"  class="btn btn-warning" >Borrar</a>
+								      <a href="<?php echo base_url('/marcas/edit/' . $list['ma_id']) ?>" class="btn btn-warning" >Editar</a>
+								      <a onclick=deleteMa(<?php echo $list['ma_id'] ?>); href="#"  class="btn btn-danger" >Borrar</a>
 								      </td>
 								    </tr>
 								    <?php endforeach;?>

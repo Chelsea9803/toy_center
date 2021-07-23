@@ -25,7 +25,7 @@ function login(){
         alert(response.messages+" Token:"+response.tocken); 
         window.location.href = "http://localhost/toy_center/public/marcas";       
      }).fail(function (jqXHR, textStatus, errorThrown){ 
-         alert('Nose algo salio mal en la peticion');
+         alert('Algo salió mal en la petición');
    
      console.log("The following error occured: "+ textStatus +" "+ errorThrown); 
     });

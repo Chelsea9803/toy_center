@@ -51,7 +51,7 @@
                     <div class="mb-4">
                       <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
                       <input id="user_pass" name="user_pass" value="Colombia2021" type="password" required class="form-control bg-light-x border-0 mb-2" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
-                      <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
+                      <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a> <a href="#">Recuperar contraseña</a>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
                   </form>

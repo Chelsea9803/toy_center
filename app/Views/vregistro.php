@@ -44,21 +44,12 @@
                 <h1 class="font-weight-bold mb-4">Regístrate</h1> 
                  
                 <form class="mb-5">
-                    <div class="mb-4">
-                      <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
-                      <input type="email" class="form-control bg-light-x border-0" id="exampleInputEmail1" placeholder="Ingresa tu email" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-4">
-                      <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
-                      <input type="password" class="form-control bg-light-x border-0 mb-2" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
-                      <a href="" id="emailHelp" class="form-text text-muted text-decoration-none">¿Has olvidado tu contraseña?</a>
-                    </div>
                     <div class="form-row mb-2">
-                            <div class="form-group col-md-6">
+                            <div class="form-group mb-6">
                                 <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" placeholder="Tu nombre">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group mb-6">
                                 <label class="font-weight-bold">Apellido <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" placeholder="Tu apellido">
                             </div>
@@ -74,41 +65,11 @@
                         <div class="form-group mb-5">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label text-muted">Al seleccionar esta casilla aceptas nuestro aviso de privacidad y los términos y condiciones</label>
+                                <label class="form-check-label text-muted">Acepto términos y condiciones</label>
                             </div>
                         </div>
-                    <button type="submit" class="btn btn-primary w-100">Iniciar sesión</button>
+                    <button type="submit" class="btn btn-primary w-100">Crear cuenta</button>
                   </form>
-
-                <!-- LOGIN CON REDES SOCIALES-->
-                <div class="row">
-                    <div class="col">
-                       <button class="btn btn-outline-primary w-100 my-1">
-                           <div class ="row align-items-center">
-                               <div class="col-2">
-                                   <img src="img/Fb.png" width="32" alt="">
-                                </div> 
-                                <div class="col-10 text-center">
-                                    Facebook
-                                </div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="col">
-                        <button class="btn btn-outline-danger w-100 my-1">
-                           <div class ="row align-items-center">
-                               <div class="col-2">
-                                   <img src="img/Google.png" width="32" alt="">
-                                </div> 
-                                <div class="col-10 text-center">
-                                    Google
-                                </div>
-                            </div>
-                        </button>    
-                    </div>  
-                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
-                    <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="#">Crea una ahora</a>
-                </div>
             </div>
         </div>
       </section>

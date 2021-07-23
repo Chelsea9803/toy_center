@@ -1,5 +1,4 @@
 
-
 function deleteMa(ma_id){
 
     let isBoss = confirm("Desea Eliminar la marca?");
@@ -19,7 +18,7 @@ function deleteMa(ma_id){
             {
                console.log(response);
     
-               alert('Marca Eliminada');
+               alert('Marca eliminada con éxito');
     
                window.location.href = "http://localhost/toy_center/public/marcas";
            }
