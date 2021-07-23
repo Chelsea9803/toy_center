@@ -83,7 +83,7 @@
                         </button>    
                     </div>  
                 <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 mt-auto w-100">
-                    <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="./register">Crea una ahora</a>
+                    <p class="d-inline-block mb-0">¿Todavía no tienes una cuenta?</p> <a href="./register">Crea una ahora</a>
                 </div>
             </div>
         </div>
